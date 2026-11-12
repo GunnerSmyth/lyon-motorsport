@@ -260,13 +260,19 @@ function homePage() {
           d.testimonials.description
         )}
 
-        <div class="testimonial-grid">
-          ${d.testimonials.quotes.map(quote => `
-            <article class="testimonial-card">
-              <p>“${e(quote)}”</p>
-            </article>
-          `).join("")}
-        </div>
+        
+<div class="testimonial-grid">
+  ${d.testimonials.quotes.map(quote => `
+    <article class="testimonial-card">
+      <p>
+        <span class="quote-mark quote-open">“</span>
+        <span class="quote-text">${e(quote)}</span>
+        <span class="quote-mark quote-close">”</span>
+      </p>
+    </article>
+  `).join("")}
+</div>
+
       </div>
     </section>
 
@@ -277,7 +283,7 @@ function homePage() {
         <div class="contact-layout">
           <div class="form-card">
             <h3>Send Us a Message</h3>
-            ${contactForm()}f
+            ${contactForm()}
           </div>
         </div>
       </div>

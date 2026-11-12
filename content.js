@@ -36,14 +36,14 @@ const CONTENT = {
     },
 
     testimonials: {
-      eyebrow: "REAL STORIES",
+      eyebrow: "",
       title: "The Difference We Make",
       description:
         "A few words about the impact of unforgettable experiences.",
       quotes: [
         "This is the first time he has smiled all week.",
         "An experience our family will never forget.",
-        "Seeing the excitement and happiness on their faces made every moment worthwhile.",
+        "I am living my dream right now.",
         "The memories made here will stay with us forever."
       ]
     },

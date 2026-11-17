@@ -399,7 +399,7 @@ textarea:focus-visible {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 690px;
+  min-height: 1050px;
   overflow: hidden;
   background: #201626;
 }
@@ -411,7 +411,40 @@ textarea:focus-visible {
   height: 100%;
   border-radius: 0;
   background: linear-gradient(120deg, #1e122d, #785294);
+  
 }
+
+/* Adjust hero image positioning */
+
+/* Full-screen desktop */
+
+
+/* Blurred background fills the banner */
+
+
+/* Blurred background */
+
+.home-hero .hero-blur {
+  display: none;
+}
+
+/* Clear photograph */
+
+.home-hero .hero-main {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  transform: none;
+}
+
+
+
+
+
+
 
 .home-hero .photo-fallback {
   color: rgba(255, 255, 255, 0.4);
@@ -504,14 +537,30 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
+
+/* Purpose and Passion photo */
+
 .feature-photo {
   height: 420px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
 }
 
+.feature-photo img {
+  object-fit: cover;
+  object-position: 90% 50%;
+}
+
+/* Our Why photo */
+
 .why-photo {
   height: 460px;
 }
+
+.why-photo img {
+  object-fit: cover;
+  object-position: 95% 50%;
+}
+
 
 .split-copy h2 {
   margin-bottom: 23px;
@@ -630,10 +679,62 @@ textarea:focus-visible {
   box-shadow: var(--shadow);
 }
 
+/* SERVICES PAGE — CARD SPACING */
+
+.services-grid {
+  gap: 45px;
+}
+
+/* Give the three cards more horizontal space */
+.services-grid {
+  width: min(1400px, calc(100vw - 140px));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Make cards taller */
+.services-grid .service-card {
+  min-height: 560px;
+}
+
+/* Make the photographs taller */
+.services-grid .service-photo {
+  height: 300px;
+}
+
+/* SERVICES PAGE — ORANGE CARD BORDERS */
+
+.services-grid .service-card {
+  border: 12px solid var(--orange);
+  border-radius: 30px;
+}
+
+
 .service-photo {
   height: 245px;
   border-radius: 0;
 }
+
+/* First service image */
+.services-grid > .service-card:nth-child(1) .service-photo img {
+  transform: scale(1.4) translateX(-2%);
+  object-position: 25% 25%;
+}
+
+/* Second service image */
+.services-grid > .service-card:nth-child(2) .service-photo img {
+   transform: scale(1.3) translateX(-10%);
+   object-position: 110% 50%;
+   
+}
+
+/* Third service image */
+.services-grid > .service-card:nth-child(3) .service-photo img {
+  transform: scale(1.3) translateX(-5%);
+  object-position: 70% 35%;
+}
+
 
 .service-copy {
   padding: 30px;
@@ -1376,7 +1477,7 @@ textarea:focus-visible {
 /* Original height: 690px. New height: 897px */
 
 .home-hero {
-  min-height: 897px;
+  min-height: 1080px;
 }
 
 
@@ -1570,3 +1671,31 @@ textarea:focus-visible {
     text-align: center;
   }
 }
+
+/* =========================================
+   HOMEPAGE ORANGE BORDER FRAME
+========================================= */
+
+
+/* =========================================
+   HOMEPAGE ORANGE BORDER FRAME
+========================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 20px solid rgba(245, 130, 40, 0.75);
+  border-radius: 34px;
+  overflow-x: clip;
+  background: #ffffff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  body {
+    border-width: 80px;
+    border-radius: 20px;
+  }
+}
+
+

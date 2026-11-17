@@ -56,30 +56,30 @@ const CONTENT = {
   services: {
     title: "Our Services",
     subtitle:
-      "Bringing the excitement of motorsport to life through extraordinary experiences.",
+      "Every experience we offer is designed to put a smile on a child's face and create memories that last a lifetime.",
     eyebrow: "WHAT WE OFFER",
-    heading: "Experiences That Make a Difference",
+    heading: "",
     description:
-      "From the thrill of the track to meaningful community connections, our programs are designed to inspire and create lasting memories.",
+      "Lyon Motorsport partners with Primary Children’s Hospital and Intermountain Health to deliver a range of unforgettable motorsport experiences for children facing medical challenges. From sitting in a real race car to meeting professional drivers, every moment is crafted with care.",
 
     cards: [
       {
         title: "Racing School",
         image: "racingSchool",
         description:
-          "An introduction to the excitement of racing through engaging, educational, and unforgettable motorsport experiences."
+          "We bring youth undergoing medical treatment to West Desert Raceway for an unforgettable day at the track. They get the chance to ride alongside our drivers in a real race car, learn how to race with go-karts, drive immersive racing simulators, and enjoy watching professional races with lunch and refreshments."
       },
       {
         title: "Interactive Car Shows",
         image: "carShow",
         description:
-          "Bringing incredible vehicles and passionate enthusiasts together for interactive events that inspire joy and connection."
+          "We bring race cars, drivers, and the excitement of motorsports directly to children's hospitals or organized events for children."
       },
       {
         title: "Personalized Motorsport Experiences",
         image: "experiences",
         description:
-          "Creating unique motorsport moments tailored to the interests and circumstances of individual children and families."
+          "Our personalized experiences accommodate children of all abilities and health conditions, ensuring each activity meets their individual needs and comfort levels. From adapted ride-alongs to VIP tours, behind-the-scenes access, and racing simulators, we strive to make the excitement of motorsports accessible to the whole family."
       }
     ],
 
@@ -214,13 +214,13 @@ const CONTENT = {
 // "images/home-hero.jpg"
 
 const IMAGES = {
-  hero: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1800&q=85",
-  corvette: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1100&q=85",
-  family: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1100&q=85",
+  hero: "images/newhero.jpg",
+  corvette: "images/mindblown.png",
+  family: "images/ourwhy.jpg",
 
-  racingSchool: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1100&q=85",
-  carShow: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1100&q=85",
-  experiences: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1100&q=85",
+  racingSchool: "images/camphoto.png",
+  carShow: "images/kidcar.jpg",
+  experiences: "images/personalizedexp.jpg",
 
   james: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&q=85",
   claire: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700&q=85",

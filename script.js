@@ -208,9 +208,21 @@ function homePage() {
 
   return `
     <section class="home-hero">
-      ${photo("hero", "Motorsport racing experience", "hero-photo")}
-
-      <div class="container hero-content">
+      
+      <div class="hero-photo">
+        <img
+          class="hero-blur"
+          src="${e(IMAGES.hero)}"
+          alt=""
+          aria-hidden="true"
+        >
+        <img
+          class="hero-main"
+          src="${e(IMAGES.hero)}"
+          alt="Child getting into a race car"
+        >
+      </div>
+       <div class="container hero-content">
         <span class="hero-eyebrow">${e(d.hero.eyebrow)}</span>
         <h1>${e(d.hero.title)}</h1>
         <p>${e(d.hero.description)}</p>

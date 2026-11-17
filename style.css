@@ -1959,4 +1959,160 @@ body {
 }
 
 
+/* =========================================
+   GET INVOLVED — CUSTOM HERO BANNER
+========================================= */
+
+body[data-page="involved"] .page-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 440px;
+  padding: 80px 0;
+  overflow: hidden;
+  text-align: left;
+
+  background:
+    radial-gradient(
+      circle at 55% 40%,
+      rgba(153, 73, 201, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(
+      115deg,
+      #35104f 0%,
+      #572184 100%
+    );
+}
+
+/* Checkerboard racing pattern */
+body[data-page="involved"] .page-hero::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -65px;
+  width: 430px;
+  height: 230px;
+
+  background:
+    conic-gradient(
+      rgba(255,255,255,0.13) 25%,
+      transparent 0 50%,
+      rgba(255,255,255,0.13) 0 75%,
+      transparent 0
+    );
+
+  background-size: 90px 90px;
+  transform: rotate(-16deg);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Orange diagonal edge with photo */
+body[data-page="involved"] .page-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      115deg,
+      var(--orange) 0%,
+      var(--orange) 2%,
+      transparent 2%
+    ),
+    url("images/IMG_4729.JPG");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  clip-path: polygon(
+    24% 0,
+    100% 0,
+    100% 100%,
+    0% 100%
+  );
+}
+
+/* Position banner text */
+body[data-page="involved"] .page-hero .container {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 48px));
+}
+
+/* Small label above heading */
+body[data-page="involved"] .page-hero h1::before {
+  content: "LYON MOTORSPORT";
+  display: block;
+  margin-bottom: 18px;
+
+  color: #e4c7f7;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+}
+
+/* Main heading */
+body[data-page="involved"] .page-hero h1 {
+  max-width: 580px;
+  margin-bottom: 24px;
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  line-height: 1.05;
+  color: white;
+}
+
+/* Supporting paragraph */
+body[data-page="involved"] .page-hero p {
+  max-width: 580px;
+  margin: 0;
+  color: rgba(255,255,255,0.92);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 760px) {
+
+  body[data-page="involved"] .page-hero {
+    min-height: 560px;
+    align-items: flex-end;
+    padding: 240px 0 65px;
+  }
+
+  body[data-page="involved"] .page-hero::after {
+    top: 0;
+    width: 100%;
+    height: 58%;
+
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 88%,
+      0 100%
+    );
+  }
+
+  body[data-page="involved"] .page-hero h1 {
+    font-size: 3rem;
+  }
+
+  body[data-page="involved"] .page-hero p {
+    font-size: 1rem;
+  }
+
+  body[data-page="involved"] .page-hero::before {
+    width: 260px;
+    height: 180px;
+  }
+}
+
 

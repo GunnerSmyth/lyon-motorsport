@@ -140,6 +140,7 @@ const CONTENT = {
     description:
       "Every photograph tells a story. Explore some of the moments that make our mission so meaningful.",
 
+      // Add quotes to add new catagory button to gallery
     categories: [
       "All Photos",
       "Community",
@@ -173,30 +174,30 @@ const CONTENT = {
   involved: {
     title: "Get Involved",
     subtitle:
-      "Your support can help make incredible experiences possible.",
+      "Every contribution — big or small — gives a child an experience they'll never forget.",
 
-    heading: "Help Us Drive Change",
+    heading: "Make a Difference",
     description:
-      "Whether you want to volunteer, become a partner, support an event, or simply learn more, there is a place for you at Lyon Motorsport.",
+      "Whether you're looking to fund an unforgettable racing experience, partner with our mission, or connect a child with our program, we appreciate any contribution.",
 
     opportunities: [
       {
         icon: "♥",
-        title: "Volunteer",
+        title: "Donate an Experience",
         description:
-          "Contribute your time and talents to help create special experiences."
+          "Your donation directly covers the cost of a child’s experience with Lyon Motorsport, helping a child enjoy an unforgettable day filled with excitement, confidence, and accomplishment."
       },
       {
         icon: "★",
-        title: "Become a Partner",
+        title: "Partner with Lyon Motorsport",
         description:
-          "Collaborate with us to bring meaningful motorsport experiences to life."
+          "Your sponsorship helps us develop our racing team and tailor our program to create meaningful experiences for children facing medical challenges. In recognition of your support, your business will receive a decal on our race cars and visibility through our social media channels, connecting your brand with a mission that makes a difference."
       },
       {
         icon: "◆",
-        title: "Support Our Mission",
+        title: "Refer a Child",
         description:
-          "Help us make more unforgettable moments possible for children and families."
+          "Bring the excitement of motorsports to your school, hospital, charity, or community event! Lyon Motorsport partners with organizations to connect children with race cars and drivers, creating memorable experiences that inspire confidence and spark joy."
       }
     ],
 

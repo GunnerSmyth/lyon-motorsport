@@ -486,8 +486,8 @@ function involvedPage() {
         button: "Become a Partner"
       },
       {
-        badge: "Tailored to your community's needs",
-        button: "Plan an Event"
+        badge: "Directly connect a child with a tailored experience",
+        button: "Refer a Child"
       }
     ];
 

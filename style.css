@@ -1698,4 +1698,265 @@ body {
   }
 }
 
+/* =========================
+   GET INVOLVED PAGE
+========================= */
+
+/* Full-width navigation line */
+.involved-tab-bar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Left-aligned navigation tabs */
+.involved-tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  margin: 0;
+}
+
+/* Default tab appearance */
+.involved-tabs button {
+  background: #f6f4f8;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Selected tab */
+.involved-tabs button[aria-selected="true"] {
+  background: #7838ed;
+  color: white;
+  box-shadow: 0 3px 8px rgba(120, 56, 237, 0.18);
+}
+
+/* Hover */
+.involved-tabs button:hover {
+  transform: translateY(-1px);
+}
+
+/* Main content spacing */
+.involved-section {
+  padding-top: 48px;
+  padding-bottom: 85px;
+}
+
+/* Three-column card layout */
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 45px;
+  align-items: stretch;
+}
+
+/* Individual cards */
+.opportunity-grid .opportunity-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-top: 5px solid #8438ef;
+  border-radius: 18px;
+  padding: 0;
+  min-height: 390px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover */
+.opportunity-grid .opportunity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Card content */
+.opportunity-card-content {
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Purple icon container */
+.opportunity-card .opportunity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-bottom: 22px;
+  background: #eee7ff;
+  border-radius: 13px;
+  color: #7838ed;
+  font-size: 23px;
+}
+
+/* Card headings */
+.opportunity-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 14px;
+  text-align: left;
+}
+
+/* Card descriptions */
+.opportunity-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666666;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .opportunity-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .opportunity-grid .opportunity-card {
+    min-height: 260px;
+  }
+
+  .involved-section {
+    padding-top: 35px;
+  }
+}
+
+
+/* =========================
+   OPPORTUNITY CARD BUTTONS
+========================= */
+
+/* Make the card contents fill the card */
+.opportunity-card-content {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Keep badges and buttons at the bottom */
+.opportunity-card-bottom {
+  margin-top: auto;
+  padding-top: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* Lavender informational pill */
+.opportunity-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 100%;
+  padding: 8px 13px;
+  background: #eee7ff;
+  color: #7838ed;
+  border-radius: 25px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.opportunity-badge span {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Orange action buttons */
+.opportunity-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fa9900;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 12px 21px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.opportunity-action:hover {
+  background: #e88b00;
+  transform: translateY(-2px);
+}
+
+/* Equal-height cards */
+.opportunity-grid .opportunity-card {
+  min-height: 430px;
+  height: 100%;
+}
+
+.opportunity-grid .opportunity-card-content {
+  min-height: 425px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .opportunity-grid .opportunity-card {
+    min-height: 340px;
+  }
+
+  .opportunity-grid .opportunity-card-content {
+    min-height: 335px;
+  }
+}
+
+/* Left-align the icons inside opportunity cards */
+.opportunity-grid .opportunity-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Lavender icon boxes */
+.opportunity-grid .opportunity-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  margin: 0 0 20px;
+  padding: 0;
+  background: #eee7ff;
+  border-radius: 13px;
+  color: #7838ed;
+}
+
+/* Thin purple outline icons */
+.opportunity-grid .opportunity-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+/* Keep headings and descriptions left-aligned */
+.opportunity-grid .opportunity-card h3,
+.opportunity-grid .opportunity-card p {
+  text-align: left;
+}
+
+
 

@@ -94,34 +94,34 @@ const CONTENT = {
     subtitle:
       "Driven by passion, united by purpose, and committed to making a difference.",
     eyebrow: "THE PEOPLE BEHIND THE MISSION",
-    heading: "Driven by Purpose",
+    heading: "",
     description:
-      "Our team brings together a love for motorsport and a shared commitment to serving children, families, and our community.",
+      "Behind every unforgettable experience is a dedicated team of motorsport professionals, childcare specialists, and event coordinators who pour their hearts into every moment. We come from different backgrounds, but we share the same belief: every child deserves to feel extraordinary.",
 
     members: [
       {
-        name: "James Lyon",
+        name: "Connor Lyon",
         role: "Founder & Director",
-        image: "james",
+        image: "Connor",
         description:
           "Leading the Lyon Motorsport mission with a passion for racing, meaningful experiences, and community impact.",
-        tags: ["Leadership", "Motorsport", "Community"]
+        tags: [""]
       },
       {
-        name: "Claire Henderson",
+        name: "Craig Lyon",
         role: "Head of Operations",
         image: "claire",
         description:
           "Helping bring our mission to life through thoughtful planning, coordination, and a dedication to families.",
-        tags: ["Operations", "Events", "Outreach"]
+        tags: [""]
       },
       {
-        name: "Tom Riley",
+        name: "Gunner Smyth",
         role: "Race Experience Coordinator",
         image: "tom",
         description:
           "Creating memorable on-track and off-track experiences that bring excitement and joy to participants.",
-        tags: ["Racing", "Experiences", "Safety"]
+        tags: [""]
       }
     ],
 
@@ -135,34 +135,33 @@ const CONTENT = {
   gallery: {
     title: "Our Gallery",
     subtitle:
-      "Take a look at the incredible experiences, memorable moments, and people behind Lyon Motorsport.",
+      "A glimpse into the moments, memories, and magic that Lyon Motorsport creates for children and families every year.",
     heading: "Moments That Matter",
     description:
       "Every photograph tells a story. Explore some of the moments that make our mission so meaningful.",
 
     categories: [
       "All Photos",
-      "Events",
-      "Racing",
-      "Track Days",
-      "Charity"
+      "Community",
+      "Track",
+      
     ],
 
     // Add as many photos as you want here.
     // category must match one of the filters above.
     items: [
-      { title: "On the Track", category: "Racing", image: "gallery1" },
-      { title: "Community Car Show", category: "Events", image: "gallery2" },
-      { title: "Racing Memories", category: "Track Days", image: "gallery3" },
-      { title: "A Special Day", category: "Charity", image: "gallery4" },
-      { title: "The Starting Line", category: "Racing", image: "gallery5" },
-      { title: "Sharing the Experience", category: "Events", image: "gallery6" },
-      { title: "Trackside Moments", category: "Track Days", image: "gallery7" },
-      { title: "Making Memories", category: "Charity", image: "gallery8" },
-      { title: "Motorsport Passion", category: "Racing", image: "gallery9" },
-      { title: "Community Together", category: "Events", image: "gallery10" },
-      { title: "Behind the Wheel", category: "Track Days", image: "gallery11" },
-      { title: "Driven by Purpose", category: "Charity", image: "gallery12" }
+      { title: "On the Track", category: "Community", image: "images/babycar.jpg" },
+      { title: "Community Car Show", category: "Community", image: "images/helmetkid.png" },
+      { title: "Racing Memories", category: "Community", image: "images/track.png" },
+      { title: "A Special Day", category: "Community", image: "images/gallery1.PNG" },
+      { title: "The Starting Line", category: "Community", image: "images/newhero.jpg" },
+      { title: "Sharing the Experience", category: "Community", image: "images/gallery2.PNG" },
+      { title: "Trackside Moments", category: "Community", image: "images/gallery.3.jfif" },
+      { title: "Motorsport Passion", category: "Community", image: "images/gallery6.jpg" },
+      { title: "Making Memories", category: "Community", image: "images/gallery4.jfif" },
+      { title: "Community Together", category: "Track", image: "images/gallery7.jpg" },
+      { title: "Behind the Wheel", category: "Community", image: "images/gallery5.jfif" },
+      { title: "Driven by Purpose", category: "Community", image: "images/kidcar.jpg" }
     ],
 
     ctaTitle: "Be Part of the Story",

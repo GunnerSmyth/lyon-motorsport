@@ -443,13 +443,14 @@ function galleryPage() {
   `;
 }
 
+
 function involvedPage() {
   const d = C.involved;
 
   return `
     ${pageHero(d.title, d.subtitle)}
 
-    <section class="section">
+    <div class="involved-tab-bar">
       <div class="container">
         <div class="involved-tabs" role="tablist" aria-label="Get involved options">
           <button type="button" id="tab-help"
@@ -463,19 +464,73 @@ function involvedPage() {
             Send a Message
           </button>
         </div>
+      </div>
+    </div>
+
+    <section class="section involved-section">
+      <div class="container">
 
         <div id="panel-help" role="tabpanel" aria-labelledby="tab-help">
           ${sectionIntro("", d.heading, d.description)}
 
-          <div class="card-grid opportunity-grid">
-            ${d.opportunities.map(item => `
-              <article class="opportunity-card">
-                <div class="opportunity-icon">${e(item.icon)}</div>
-                <h3>${e(item.title)}</h3>
-                <p>${e(item.description)}</p>
-              </article>
-            `).join("")}
+          
+<div class="card-grid opportunity-grid">
+  ${d.opportunities.map((item, index) => {
+    const details = [
+      {
+        badge: "100% goes directly to the child's experience",
+        button: "Donate Now"
+      },
+      {
+        badge: "Brand visibility and sustained impact",
+        button: "Become a Partner"
+      },
+      {
+        badge: "Tailored to your community's needs",
+        button: "Plan an Event"
+      }
+    ];
+
+    const detail = details[index] || {
+      badge: "Make a difference with Lyon Motorsport",
+      button: "Get Involved"
+    };
+
+    return `
+      <article class="opportunity-card">
+        <div class="opportunity-card-content">
+          
+          <div class="opportunity-icon">
+            ${[
+              `<i data-lucide="heart"></i>`,
+              `<i data-lucide="trophy"></i>`,
+              `<i data-lucide="users"></i>`
+            ][index] || `<i data-lucide="heart"></i>`}
           </div>
+
+
+          <h3>${e(item.title)}</h3>
+          <p>${e(item.description)}</p>
+
+          <div class="opportunity-card-bottom">
+            <div class="opportunity-badge">
+              <span>⊙</span>
+              ${e(detail.badge)}
+            </div>
+
+            <a href="#message"
+               class="btn btn-orange opportunity-action"
+               data-open-message>
+              ${e(detail.button)} →
+            </a>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("")}
+  
+</div>
+
 
           <div class="involved-bottom">
             <p>Interested in joining our mission?</p>
@@ -500,10 +555,12 @@ function involvedPage() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   `;
 }
+
 
 const renderers = {
   home: homePage,
@@ -520,6 +577,11 @@ document.querySelector("#app").innerHTML = `
   <main id="main-content">${renderPage()}</main>
   ${footer()}
 `;
+if (window.lucide) {
+  lucide.createIcons();
+}
+
+document.querySelector("#year").textContent = new Date().getFullYear();
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 

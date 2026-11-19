@@ -718,20 +718,20 @@ textarea:focus-visible {
 
 /* First service image */
 .services-grid > .service-card:nth-child(1) .service-photo img {
-  transform: scale(1.4) translateX(-2%);
+  transform: scale(1.3) translateX(-5%);
   object-position: 25% 25%;
 }
 
 /* Second service image */
 .services-grid > .service-card:nth-child(2) .service-photo img {
-   transform: scale(1.3) translateX(-10%);
+   transform: scale(1.1) translateX(5%) translateY(4.5%);
    object-position: 110% 50%;
    
 }
 
 /* Third service image */
 .services-grid > .service-card:nth-child(3) .service-photo img {
-  transform: scale(1.3) translateX(-5%);
+  transform: scale(1.3) translateX(-5%) translateY(-8%);
   object-position: 70% 35%;
 }
 
@@ -1693,7 +1693,7 @@ body {
 /* Mobile adjustments */
 @media (max-width: 900px) {
   body {
-    border-width: 80px;
+    border-width: 8px;
     border-radius: 20px;
   }
 }
@@ -2181,7 +2181,7 @@ body:is(
 
 /* Get Involved banner */
 body[data-page="involved"] {
-  --banner-image: url("images/IMG_4729.JPG");
+  --banner-image: url("images/mindblown.png");
 }
 
 /* Services banner */
@@ -2191,7 +2191,7 @@ body[data-page="services"] {
 
 /* Team banner */
 body[data-page="team"] {
-  --banner-image: url("images/yeet.JPG");
+  --banner-image: url("images/IMG_4729.JPG");
 }
 
 /* Gallery banner */
@@ -2200,3 +2200,115 @@ body[data-page="gallery"] {
 }
 
 
+/* =========================================
+   RESPONSIVE SERVICES IMAGE POSITIONING
+========================================= */
+
+/* LAPTOPS — 761px to 1400px */
+@media (min-width: 761px) and (max-width: 1400px) {
+
+  .services-grid > .service-card:nth-child(1) .service-photo img {
+    transform: scale(1.2) translateX(8%);
+    object-position: center 45%;
+  }
+
+  .services-grid > .service-card:nth-child(2) .service-photo img {
+    transform: scale(1.2) translateX(7%);
+    object-position: 110% 50%;
+  }
+
+  .services-grid > .service-card:nth-child(3) .service-photo img {
+    transform: scale(1.2) translateX(-5%);
+    object-position: 70% 35%;
+  }
+}
+
+/* PHONES — 760px and below */
+@media (max-width: 760px) {
+
+  .services-grid {
+    width: 100%;
+    left: auto;
+    transform: none;
+  }
+
+  .services-grid .service-photo {
+    height: 300px;
+  }
+
+  .services-grid > .service-card:nth-child(1) .service-photo img {
+    transform: scale(1.3) translateX(3%);
+    object-position: 25% 25%;
+  }
+
+  .services-grid > .service-card:nth-child(2) .service-photo img {
+    transform: scale(1.1) translateY(5%);
+    object-position: 70% 50%;
+  }
+
+  .services-grid > .service-card:nth-child(3) .service-photo img {
+    transform: scale(1.25) translateY(-10%);
+    object-position: 70% 35%;
+  }
+}
+
+
+/* HOMEPAGE — OUR WHY PHOTO ON MOBILE */
+@media (max-width: 760px) {
+  .why-photo img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    transform: scale(1.5) translateX(-15%) translateY(17%);
+  }
+}
+
+
+/* =========================================
+   CENTER FOOTER ON MOBILE — ALL PAGES
+========================================= */
+
+@media (max-width: 760px) {
+
+  .site-footer .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .site-footer .footer-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer .footer-info p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .site-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  .site-footer .footer-bottom {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Hide Gallery category filters */
+.gallery-filters {
+  display: none;
+}
+
+/* GET INVOLVED — BANNER IMAGE POSITIONING */
+
+body[data-page="involved"] .page-hero::after {
+  background-position: 100% 100%;
+  transform: scale(1.1) translateX(-2%) translateY(5%);
+}

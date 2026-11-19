@@ -151,18 +151,18 @@ const CONTENT = {
     // Add as many photos as you want here.
     // category must match one of the filters above.
     items: [
-      { title: "On the Track", category: "Community", image: "images/babycar.jpg" },
-      { title: "Community Car Show", category: "Community", image: "images/helmetkid.png" },
-      { title: "Racing Memories", category: "Community", image: "images/track.png" },
-      { title: "A Special Day", category: "Community", image: "images/gallery1.PNG" },
-      { title: "The Starting Line", category: "Community", image: "images/newhero.jpg" },
-      { title: "Sharing the Experience", category: "Community", image: "images/gallery2.PNG" },
-      { title: "Trackside Moments", category: "Community", image: "images/gallery.3.jfif" },
-      { title: "Motorsport Passion", category: "Community", image: "images/gallery6.jpg" },
-      { title: "Making Memories", category: "Community", image: "images/gallery4.jfif" },
-      { title: "Community Together", category: "Track", image: "images/gallery7.jpg" },
-      { title: "Behind the Wheel", category: "Community", image: "images/gallery5.jfif" },
-      { title: "Driven by Purpose", category: "Community", image: "images/kidcar.jpg" }
+      { title: "", category: "", image: "images/babycar.jpg" },
+      { title: "", category: "", image: "images/helmetkid.png" },
+      { title: "", category: "", image: "images/track.png" },
+      { title: "", category: "", image: "images/gallery1.PNG" },
+      { title: "", category: "", image: "images/newhero.jpg" },
+      { title: "", category: "", image: "images/gallery2.PNG" },
+      { title: "", category: "", image: "images/gallery.3.jfif" },
+      { title: "", category: "", image: "images/gallery6.jpg" },
+      { title: "", category: "", image: "images/gallery4.jfif" },
+      { title: "", category: "", image: "images/gallery7.jpg" },
+      { title: "", category: "", image: "images/gallery5.jfif" },
+      { title: "", category: "", image: "images/kidcar.jpg" }
     ],
 
     ctaTitle: "Be Part of the Story",
@@ -215,11 +215,11 @@ const CONTENT = {
 
 const IMAGES = {
   hero: "images/newhero.jpg",
-  corvette: "images/mindblown.png",
+  corvette: "images/updatecarkid.jpg",
   family: "images/ourwhy.jpg",
 
   racingSchool: "images/camphoto.png",
-  carShow: "images/kidcar.jpg",
+  carShow: "images/happy1.jpg",
   experiences: "images/personalizedexp.jpg",
 
   james: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&q=85",

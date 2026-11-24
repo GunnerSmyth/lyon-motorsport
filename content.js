@@ -1,12 +1,12 @@
 
 const CONTENT = {
   brand: {
-    name: "LYON MOTORSPORT",
-    tagline: "Racing Beyond Limits"
+    name: "Racing Beyond Limits",
+    tagline: "LYON MOTORSPORT"
   },
 
   contact: {
-    email: "cglyon24@gmail.com",
+    email: "charity@lyonmotorsport.com",
     phone: "(385) 645-9151",
     hours: "Monday – Friday, 9:00 AM – 5:00 PM"
   },
@@ -41,10 +41,10 @@ const CONTENT = {
       description:
         "A few words about the impact of unforgettable experiences.",
       quotes: [
-        "This is the first time he has smiled all week.",
-        "An experience our family will never forget.",
-        "I am living my dream right now.",
-        "The memories made here will stay with us forever."
+        "This is the first time he has smiled all week",
+        "It was the best event we've had here in years",
+        "I am living my dream right now!",
+        "This is exactly what families like ours need"
       ]
     },
 
@@ -73,7 +73,7 @@ const CONTENT = {
         title: "Interactive Car Shows",
         image: "carShow",
         description:
-          "We bring race cars, drivers, and the excitement of motorsports directly to children's hospitals or organized events for children."
+          "We bring race cars, drivers, and the excitement of motorsports directly to children's hospitals and organized events. We understand that entering a hospital for the first time or facing an extended stay can bring feelings of fear and uncertainty. By creating exciting, interactive experiences, we hope to replace some of those worries with moments of joy, curiosity, and adventure. Our goal is to give children something to look forward to and create positive memories during an otherwise challenging time."
       },
       {
         title: "Personalized Motorsport Experiences",
@@ -102,9 +102,9 @@ const CONTENT = {
       {
         name: "Connor Lyon",
         role: "Founder & Director",
-        image: "Connor",
+        image: "images/connor.JPG",
         description:
-          "Leading the Lyon Motorsport mission with a passion for racing, meaningful experiences, and community impact.",
+          "Connor’s experience as an Advanced EMT responding to 911 calls has shaped his passion for supporting children facing serious medical challenges and the families beside them. With eight years of racing experience, a national racing license through the National Auto Sport Association (NASA), and experience as a driving instructor, he founded Lyon Motorsport to combine that passion with his love of racing. Connor aims to help kids find adventure amidst sickness and restore their childhood by giving them the same experiences that have brought him excitement, fulfillment, confidence, and unforgettable memories.",
         tags: [""]
       },
       {
@@ -112,23 +112,23 @@ const CONTENT = {
         role: "Head of Operations",
         image: "claire",
         description:
-          "Helping bring our mission to life through thoughtful planning, coordination, and a dedication to families.",
+          "Craig is an electrical engineer by profession, with a career built around solving complex problems and designing solutions that help protect people. Outside of work, he has a lifelong passion for cars, racing, and fixing things. He believes some of the most meaningful things we can do are use our talents, time, and passions to make a difference in someone else’s life. Combining his love of cars with the opportunity to bring smiles, hope, and encouragement to children and their families is something truly special to him.",
         tags: [""]
       },
       {
         name: "Gunner Smyth",
-        role: "Race Experience Coordinator",
+        role: "Strategic Initiatives Manager",
         image: "tom",
         description:
-          "Creating memorable on-track and off-track experiences that bring excitement and joy to participants.",
+          "With a background in strategic consulting and business strategy, Gunner focuses on helping Lyon Motorsport grow its impact through thoughtful planning and new opportunities. His greatest passion is connecting with people, building genuine friendships, and finding ways to make a difference in their lives. He loves bringing these passions together, using business principles and meaningful relationships to strengthen the organization, expand its reach, and create unforgettable experiences for more children and families.",
         tags: [""]
       }
     ],
 
     stats: [
-      { value: "20+", label: "Years of Experience" },
-      { value: "500+", label: "Children Supported" },
-      { value: "100%", label: "Volunteer-Powered Passion" }
+      { value: "12+", label: "Years of Motorsport Experience" },
+      { value: "100%", label: "NASA CCR Safety Compliant" },
+      { value: "AEMT", label: "Certified & Practicing" }
     ]
   },
 
@@ -222,9 +222,9 @@ const IMAGES = {
   carShow: "images/happy1.jpg",
   experiences: "images/personalizedexp.jpg",
 
-  james: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&q=85",
-  claire: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700&q=85",
-  tom: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&q=85",
+  james: "images/connor.png",
+  claire: "images/Craigheadshot.jpg",
+  tom: "images/gunner.png",
 
   gallery1: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1000&q=85",
   gallery2: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000&q=85",

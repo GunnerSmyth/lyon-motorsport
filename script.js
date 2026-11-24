@@ -48,7 +48,7 @@ function header() {
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Lyon Motorsport Home">
-          <span class="brand-symbol">LM<span class="brand-dot">.</span></span>
+          <img src="images/logo.png" alt="Lyon Motorsport" class="brand-logo">
           <span class="brand-words">
             <strong>${e(C.brand.name)}</strong>
             <small>${e(C.brand.tagline)}</small>

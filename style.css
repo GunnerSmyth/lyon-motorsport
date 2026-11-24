@@ -490,7 +490,7 @@ textarea:focus-visible {
   color: #ffb46f;
   font-weight: 800;
   letter-spacing: 0.16em;
-  font-size: 0.82rem;
+  font-size: 1.3rem;
   margin-bottom: 21px;
 }
 
@@ -2312,3 +2312,42 @@ body[data-page="involved"] .page-hero::after {
   background-position: 100% 100%;
   transform: scale(1.1) translateX(-2%) translateY(5%);
 }
+
+/* LYON MOTORSPORT HEADER LOGO */
+
+.brand-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Mobile logo */
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* =========================================
+   TEAM PAGE — PHOTO POSITIONING
+========================================= */
+
+/* First team photo */
+.team-card:nth-child(1) .team-photo img {
+  object-position: 50% 30%;
+  transform: scale(2.4) translateX(-8%) translateY(5%);
+}
+
+/* Second team photo */
+.team-card:nth-child(2) .team-photo img {
+  object-position: 50% 30%;
+  transform: scale(1.5) translateX(-17%) translateY(-15%);
+}
+
+/* Third team photo */
+.team-card:nth-child(3) .team-photo img {
+  object-position: 50% 15%;
+  transform: scale(1.1) translateY(-4%);
+}
+
